@@ -7,7 +7,4 @@ def prime(number):
         i += 1
     return True
 
-if prime(int(input())):
-    print('True')
-else:
-    print('False')
+print(prime(int(input())))
