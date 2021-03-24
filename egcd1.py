@@ -7,8 +7,8 @@ def egcd(cort):
     coefy0 = coefx1
     return nod0, coefx0, coefy0
 
+def result(first, second):
+    nod, coefx, coefy = egcd((int(first), int(second), 0, 1))
+    my_string = str(nod) + ' = ' + first + ' * ' + str(coefx) + ' + ' + second + ' * ' + str(coefy)
+    return my_string
 
-first = input()
-second = input()
-nod, coefx, coefy = egcd((int(first), int(second), 0, 1))
-print(str(nod) + ' = ' + first + ' * ' + str(coefx) + ' + ' + second + ' * ' + str(coefy))
